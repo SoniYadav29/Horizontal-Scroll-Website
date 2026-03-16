@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/cdn/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title>horizontal</title>
+      </head>
+
+      <body>
+        <div id="outer-wrapper">
+          <div id="wrapper">
+            <!-- slide 1 -->
+            <div class="slide one" id="work">
+              <nav>
+                <img
+                  src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
+                  alt="Logo"
+                  class="logo"
+                />
+                <div id="nav-part2">
+                  <h4><a href="#work">Work</a></h4>
+                  <h4><a href="#studio">Studio</a></h4>
+                  <h4><a href="#contact">Contact</a></h4>
+                </div>
+                <h3>Menu</h3>
+              </nav>
+              <div class="row center">
+                <div class="left col-6 g-0">
+                  <h3 class="g-0 m-0 p-0">
+                    Sundown is a multi-disciplinary studio focused on creating
+                    unique, end-to-end experiences and environments.
+                  </h3>
+                </div>
+                <div class="right col-6">
+                  <h1>SPACES THAT INSPIRE</h1>
+                </div>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="slide two" id="studio">
+              <div class="vidContainer">
+                <div class="hero-shape">
+                  <div class="hero1"></div>
+                  <div class="hero2"></div>
+                  <div class="hero3"></div>
+                </div>
+                <video
+                  autoplay
+                  loop
+                  muted
+                  src="https://sundown-ivory.vercel.app/video.mp4"
+                  class="video"
+                ></video>
+              </div>
+            </div>
+            <div class="slide three">
+              <div class="row thirdrow my-5">
+                <div class="col-8 left2">
+                  <h1>
+                    We are a group of design-driven, goal-focused creators,
+                    producers, and designers who believe that the details make
+                    all the difference.
+                  </h1>
+                  <div class="hero-shape2">
+                    <div class="hero21"></div>
+                  </div>
+                </div>
+                <div class="col-4 right2">
+                  <div class="minidiv">
+                    <div class="divImg">
+                      <img
+                        src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
+                        alt="img"
+                        class="image"
+                      />
+                    </div>
+                    <div class="divP">
+                      <p>
+                        We love to create, we love to solve, we love to
+                        collaborate, and we love to turn amazing ideas into
+                        reality. We’re here to partner with you through every
+                        step of the process and know that relationships are the
+                        most important things we build.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide bg-gradient d-flex align-self-center justify-content-center" id="contact">
+
+
+              <div class="page-wrapper p-5 my-5 ms-5 text-white shadow w-50 align-self-center">
+                  <!-- Form -->
+                  <div id="formView">
+                    
+                    <h2 class="form-title text-center">Send a message</h2>
+                    <form id="contactForm" novalidate>
+                      <div class="row-half mb-3">
+                        <div>
+                          <label class="form-label">First name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="fname"
+                            placeholder="Jane"
+                            required
+                          />
+                          <div class="invalid-feedback">Required.</div>
+                        </div>
+                        <div>
+                          <label class="form-label">Last name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="lname"
+                            placeholder="Doe"
+                            required
+                          />
+                          <div class="invalid-feedback">Required.</div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="jane@example.com"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Enter a valid email address.
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-label"
+                          >Phone
+                          <span
+                            style="
+                              font-weight: 300;
+                              text-transform: none;
+                              letter-spacing: 0;
+                            "
+                            >(optional)</span
+                          ></label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="phone"
+                          placeholder="+91 98765 43210"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          maxlength="500"
+                          placeholder="Tell us about your project or inquiry…"
+                          required
+                          oninput="countChars()"
+                        ></textarea>
+                        <div class="invalid-feedback">
+                          Please write a message.
+                        </div>
+                      </div>
+                      <div id="nav-part2" class="d-flex align-items-center justify-content-center mt-3">
+                        <h4><a href="javascript:void(0);" onclick="submitForm()">Send message</a></h4>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+
+    <script src="assets/cdn/bootstrap.bundle.min.js"></script>
+    <script src="assets/cdn/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+  background-color: #efeae3;
+}
+#outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+#wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.one {
+  background-color: #efeae3;
+  padding: 0vw 2vw;
+}
+nav {
+  padding: 2vw 0vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  justify-content: space-between;
+}
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+#nav-part2 h4 {
+  padding: 10px 20px;
+  border: 1px solid #0000003c;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #000000bb;
+  transition: all ease 0.4s;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+#nav-part2 h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+#nav-part2 h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+#nav-part2 h4 a {
+  color: #000000bb;
+  text-decoration: none;
+  position: relative;
+  z-index: 9;
+}
+#nav-part2 h4:hover a {
+  color: #fff;
+}
+nav h3 {
+  display: none;
+}
+.center {
+  width: 100%;
+  height: 68vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-right: 9vh;
+  border-right: 1px solid #bfbbb6;
+  padding: 0vw 2vw;
+}
+.left h3 {
+  padding-left: 1vw;
+  font-size: 2vw;
+  width: 65%;
+  font-weight: 700;
+}
+.right h1 {
+  font-size: 10vw;
+  line-height: 82%;
+  padding-right: 1vw;
+  text-align: end;
+  font-weight: 700;
+}
+.video {
+  left: 30%;
+  margin: 12vh 4vh;
+  width: 1000px;
+  border-radius: 27px;
+  position: absolute;
+  z-index: 9999;
+}
+.hero-shape {
+  width: 35vw;
+  height: 30vw;
+  background: linear-gradient(#fe330a, #fe3116);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 35%;
+  position: absolute;
+  filter: blur(20px);
+  bottom: 15%;
+  left: 24%;
+}
+.hero1 {
+  height: 30vw;
+  width: 30vw;
+  background-color: #fe330a;
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+}
+.hero2 {
+  height: 30vw;
+  width: 30vw;
+  /* background-color: black; */
+  background: linear-gradient(#fe330a, #fe3116);
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+  animation-name: anime2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.hero3 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe330a, #fe3116);
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+  animation-name: anime3;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes anime3 {
+  from {
+    transform: translate(15%, 8%);
+  }
+  to {
+    transform: translate(-5%, 0%);
+  }
+}
+@keyframes anime2 {
+  from {
+    transform: translate(5%, 10%);
+  }
+  to {
+    transform: translate(-2%, -8%);
+  }
+} /* 3rd slide */
+.thirdrow {
+  width: 100%;
+  height: 68vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 9vh;
+  border-right: 1px solid #bfbbb6;
+}
+.left2 {
+  width: 63%;
+}
+.right2 {
+  width: 37%;
+  padding-left: 10vw;
+}
+.left2 h1 {
+  padding-left: 1vw;
+  font-size: 4.2vw;
+  font-weight: 750;
+}
+.image {
+  width: 300px;
+  border-radius: 15px;
+}
+.divP {
+  width: 300px;
+  text-align: justify;
+  margin-top: 3vw;
+}
+.hero-shape2 {
+  width: 35vw;
+  height: 30vw;
+  background: linear-gradient(#fe330a, #fe3116);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 35%;
+  position: absolute;
+  filter: blur(20px);
+  bottom: 15%;
+  left: 24%;
+}
+
+.video {
+  left: 30%;
+  margin: 12vh 4vh;
+  width: 1000px;
+  border-radius: 27px;
+  position: absolute;
+  z-index: 9999;
+}
+.hero-shape {
+  width: 35vw;
+  height: 30vw;
+  background: linear-gradient(#fe330a, #fe3116);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 35%;
+  position: absolute;
+  filter: blur(20px);
+  bottom: 15%;
+  left: 24%;
+}
+.hero21 {
+  height: 30vw;
+  width: 30vw;
+  background: linear-gradient(#fe330a, #fe3116);
+  border-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+  animation-name: anime21;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes anime21 {
+  from {
+    transform: translate(15%, 8%);
+  }
+  to {
+    transform: translate(-5%, 0%);
+  }
+}
+.bg-gradient {
+  background-image: linear-gradient(271deg, #fe320e, #efeae3) !important;
+}
+
+/* -----------------------------------  */
+.page-wrapper {
+  border-radius: 10px;
+  border-bottom-right-radius: 72px;
+  background-color: rgb(255 255 255 / 17%) !important;
+}
